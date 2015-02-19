@@ -38,7 +38,7 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  
 $themedef = array(
     'name'  => "SugarAlfresco",
-    'description' => "Default theme from Sugar 5",
+    'description' => "Theme basead in Alfresco 5",
     'version' => array(
         'regex_matches' => array('6\.*.*'),
         ),
