@@ -62,7 +62,7 @@ $(document).ready(function(){
             //alert("closest subModuleList");        
         return;
         }
-        $(".selected").hide(); 
+        $("#subModuleList .selected").hide(); 
         $("ul.cssmenu").hide();            
     });    
 });

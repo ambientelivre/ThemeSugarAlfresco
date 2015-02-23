@@ -721,7 +721,7 @@ div.moduleTitle
     margin-top:3px;
     padding:10px 6px 12px 10px;
     padding:20px 16px 22px 30px;
-    width: 100%;
+    /*width: 100%;*/
 }
 .view tr td table, 
 .view tr td table tr td
@@ -3090,7 +3090,6 @@ ul.subpanelTablist li a,
 /* colors */
 body
 {
-	color: #ccc;
 	background-color: #ffffff;
 }
 h1, h2, h3
@@ -3141,7 +3140,7 @@ button[disabled], input[type=submit][disabled], input[type=reset][disabled], inp
 }
 input,select 
 {
-	border-color: #94c1e8;
+	border-color: #CCC;
 	background-color: #ffffff;
 }
 
