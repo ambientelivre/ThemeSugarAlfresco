@@ -41,9 +41,8 @@
     <div class="clear"></div>
 </div>
 <div id="bottomLinks">
-{if $AUTHENTICATED}
+{*
 {$BOTTOMLINKS}
-{*/if*}
 </div>
 <div id="footer">
 	<div id="responseTime">
@@ -53,7 +52,7 @@
         {$COPYRIGHT}
     </div>
 </div>
-{/if}    
+*}    
 <script>
 {literal}
 if(SUGAR.util.isTouchScreen()) {
