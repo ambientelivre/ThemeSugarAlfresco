@@ -41,7 +41,7 @@
  ********************************************************************************/
 
 /* from old default theme */
-/* MAIN NAV STYLES 
+/* MAIN NAV STYLES */
 
 /* Alfresco reset css*/
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
@@ -122,7 +122,10 @@ body
 { 
 	margin: 0px;
 	/*font-family: Arial, Verdana, Helvetica, sans-serif;*/
-                  font: 13px/1.231 arial,helvetica,clean,sans-serif;
+        /*font: 13px/1.231 arial,helvetica,clean,sans-serif;*/
+        font: 13px/1.231 Open Sans,arial,helvetica,clean,sans-serif;
+        color: #333;
+        background-color: #fff;
 }
 fieldset, table, pre 
 {
@@ -224,6 +227,9 @@ th, td
 #search, #sitemapLink, #colorPicker, #welcome, #globalLinks
 {
     float: right;
+}
+#search {
+    height: 22px;
 }
 #welcome 
 {    
@@ -409,6 +415,8 @@ div#content noLeftColumn
 /* module list in header.tpl */
 #moduleList
 {
+    font-size: 13.1px;
+    height: 28px;
 }
 #moduleList ul 
 {
@@ -572,12 +580,6 @@ border:none;
 background:transparent none repeat scroll 0% 0%;
 }
 
-.subTabMore 
-{
-    font-size: 11px;
-    text-decoration: none;
-    padding-top: 3px;    
-}
 .subTabMore a {
     cursor:pointer;
 }
@@ -756,7 +758,7 @@ div.moduleTitle
 .detail tr td
 {
     border: none; 
-	vertical-align: top;
+    vertical-align: top;
     padding: 5px 6px 5px 6px;
     vertical-align: top;
     text-align: left;
@@ -895,7 +897,7 @@ margin-top: 0;
 .td_alt, .list tr th, .list tr td[scope=col],
 .edit .list tr th, .edit .list tr td[scope=col]
 {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
     text-align: left;
     padding: 4px 5px 4px 5px !important;
@@ -1248,7 +1250,7 @@ div.indent_right {
 #sitemap a:link, #sitemap a:visited 
 {
     text-decoration:none;
-    font-size: 11px;
+    /*font-size: 11px;*/
     color: #444;
 }
 #sitemap a:hover, #sitemap h4 a:hover 
@@ -1825,7 +1827,7 @@ table.reportlistView td, table.reportlistView th {
     color: #000;
     padding: 4px;
     text-align: center;
-    font-size: 11px;
+    /*font-size: 11px;*/
     }
     table.reportlistView th, .reportlistView .reportlistViewMatrixRightEmptyData, .reportlistView .reportlistViewMatrixRightEmptyData1 {
     background: #dcdcdc;
@@ -1842,7 +1844,7 @@ table.reportlistView td, table.reportlistView th {
 }
 .olCapFontClass A { 
 	color: #dfdfdf; 
-	font-size: 9px; 
+	/*font-size: 9px;*/ 
 }
 .olFgClass td, #forecastsWorksheet .olBgClass td.olFgClass { 
 	background-color: #fff; 
@@ -2095,10 +2097,12 @@ td.edit.view td[align=right]
 {
 	text-align: right;
 }
+/*
 #user_password, #user_name
 {
 	width: 150px;
 }
+*/
 
 /* if we have horizontal padding anywhere in the table, it will break the rollup tree */
 #forecastsWorksheet  tbody  tr  td,
@@ -2285,7 +2289,8 @@ td.edit.view td[align=right]
 
 .sugarFeedDashlet .byLineBox .byLineLeft
 {
-	font-size:79%;
+        /* Ultima descricao dos paineis iniciais */
+	/*font-size:79%;*/
 	float:left;
 }
 
@@ -2293,7 +2298,7 @@ td.edit.view td[align=right]
 {
 	display:inline;
 	float:right;
-	font-size:79%;
+	/*font-size:79%;*/
 }
 
 iframe.teamNoticeBox
@@ -2513,7 +2518,7 @@ button[selected], input[type=submit][selected], input[type=reset][selected], inp
 }
 
 #ajaxHeader {
-    background-color: #000;
+    background-color: #1A1A1A;
 }
 
 /* header */
@@ -2852,14 +2857,6 @@ ul.subpanelTablist li a.current, ul.subpanelTablist li a.current:hover
 }
 
 /* fonts */
-body 
-{ 
-	/*font-size: 12px;*/
-}
-table, div 
-{
-	/font-size: 11px;                  
-}
 h1, h2 
 {
 	font-size: 14px; 
@@ -2904,11 +2901,6 @@ input, select, textarea, button
 }
     
 /* search */
-#search input[name=query_string]
-{
-    /*font-size: 11px;*/
-}
-
 /* side quickcreate */
 #newRecord form,
 #newRecord form button,
@@ -2956,11 +2948,11 @@ input, select, textarea, button
 /* for all views */
 .view tr, .view td, .view h4, .view div
 {
-    font-size: 12px;
+    /*font-size: 12px;*/
 }
 .view td a, .view div a, .list th div
 {
-    font-size: 11px;
+    /*font-size: 11px;*/
 }
 .other td a, .detail td a
 {
@@ -3030,10 +3022,6 @@ ul.subpanelTablist li a,
 {
     font-size: 12px;
 }
-.subTabMore 
-{
-    font-size: 11px;
-}
 
 /* for quick searches */
 .sqsMatchedSmartInputItem 
@@ -3044,13 +3032,13 @@ ul.subpanelTablist li a,
 /* for overlib js library */
 .olCapFontClass A 
 {
-	font-size: 9px; 
+	/*font-size: 9px;*/ 
 }
 
 /* sitemap */
 #sitemap a:link, #sitemap a:visited, #sitemap a:hover 
 {
-    font-size: 11px;
+    /*font-size: 11px;*/
 }
 #sitemap h4 a:link, #sitemap h4 a:visited, #sitemap h4 a:hover 
 {
@@ -3066,19 +3054,19 @@ ul.subpanelTablist li a,
 /* for edit view like forms that need a smaller font size */
 .edit.view.small td,.detail.view.small td
 {
-    font-size: 11px;
+    /*font-size: 11px;*/
 }
 
 /* to make the reportwizard button text smaller */
 .reportwizard .buttonText
 {
-	font-size: 11px;
+	/*font-size: 11px;*/
 }
 
 /* to fix the size of the fonts in the unified module search popup */
 #unified_search_advanced_div .edit.view td
 {
-    font-size: 11px;
+    /*font-size: 11px;*/
 }
 
 /* overlib popups */
@@ -3088,10 +3076,6 @@ ul.subpanelTablist li a,
 }
 
 /* colors */
-body
-{
-	background-color: #ffffff;
-}
 h1, h2, h3
 {
 	color: #000000;
@@ -3170,38 +3154,11 @@ textarea
 }
 
 /* for the main screen navigation tabs */
-#moduleList 
-{
-    /*
-    background-image : url('../../../../index.php?entryPoint=getImage&imageName=tabRowBg.gif');
-    background-repeat: repeat-x;
-    border-bottom-color: #666;
-    */
-}
-/*
-#moduleList > ul > li
-{
-    background-image:url('../../../../index.php?entryPoint=getImage&themeName=Sugar55&imageName=otherTab.gif');    
-}
-#moduleList ul li span.currentTab a:link, 
-#moduleList ul li span.currentTab a:visited, 
-#moduleList ul li span.currentTab a:hover 
-{
-    color: #ffffff;    
-}
-*/
 #moduleList ul li a:link, 
 #moduleList ul li a:visited 
 {
     color: #CCC;
 }
-
-/*
-#moduleList ul li a:hover 
-{
-    background-color: #666;
-}
-*/
 
 #moduleList ul li span.currentTabLeft, 
 #moduleList ul li span.currentTabRight, 
