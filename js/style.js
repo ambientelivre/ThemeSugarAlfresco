@@ -47,7 +47,7 @@ $(document).ready(function(){
      * */
     $('body').click(function(evt){    
         //if (evt.target.className=='subTabMore') {
-        if (jQuery.contains(".subTabMore", evt.target))    {
+        if ($.contains(".subTabMore", evt.target))    {
             $("ul.cssmenu").toggle();
         }
         //if(evt.target.id == "moduleList")

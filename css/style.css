@@ -522,6 +522,7 @@ div#content noLeftColumn
 {
     border-bottom: none;    
     position:absolute;
+    z-index:9999;
 }
 
 /* Ver se nao é gambiarra */

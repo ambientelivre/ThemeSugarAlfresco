@@ -55,6 +55,7 @@
             {/foreach}
         </li>
     {/foreach}
+    {*
     <li>
         <div id="sitemapLink">
             <span id="sitemapLinkSpan">
@@ -64,5 +65,6 @@
         </div>
         <span id='sm_holder'></span>
     </li>
-    </ul>    
+    </ul>   
+    *}
 </div>

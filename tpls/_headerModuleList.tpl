@@ -126,5 +126,5 @@
 
 {if $AUTHENTICATED}
     {*include file="_headerLastViewed.tpl" theme_template=true*}
-    {include file="_headerShortcuts.tpl" theme_template=true}
+    {*include file="_headerShortcuts.tpl" theme_template=true*}
 {/if}

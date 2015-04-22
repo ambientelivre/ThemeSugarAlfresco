@@ -37,10 +37,10 @@
 *}
 {include file="_head.tpl" theme_template=true}
 {*<body onMouseOut="closeMenus();">*}
-<body>    
+<body>
+{if $AUTHENTICATED}    
 <a name="top"></a>
 {$DCSCRIPT}
-{if $AUTHENTICATED}
 <div id="header">
     <div id="ajaxHeader">
         {include file="_headerModuleList.tpl" theme_template=true}            
@@ -50,13 +50,10 @@
     {*include file="_headerSearch.tpl" theme_template=true
     <div class="clear"></div>
     *}
-    {*if !$AUTHENTICATED*}
     <br /><br />
-    {*/if*}
     <div class="clear"></div>
     <div class="line"></div>
 </div>
-{/if}
 {literal}
 <iframe id='ajaxUI-history-iframe' src='index.php?entryPoint=getImage&imageName=blank.png'  title='empty' style='display:none'></iframe>
 <input id='ajaxUI-history-field' type='hidden'>
@@ -70,6 +67,7 @@ if (SUGAR.ajaxUI && !SUGAR.ajaxUI.hist_loaded)
 }
 </script>
 {/literal}
+{/if}
 
 <div id="main">
     <div id="content" {if !$AUTHENTICATED}class="noLeftColumn" {/if}>
